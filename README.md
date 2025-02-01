@@ -42,6 +42,7 @@ The scripts are organized into the following directories:
 
 ### 06_Imputation
 
-- `colocalization.sh`: Performs leave-one-out imputation analysis.
+- `imputation.sh`: Performs leave-one-out imputation analysis.
 
 ## Cite
+Wang, Y., et al. (2025). Diploid genome assemblies of 1,116 Chinese individuals empower medical and population genetics. Unpublished.
