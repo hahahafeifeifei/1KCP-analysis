@@ -56,6 +56,5 @@ csvtk -H -t join -L -f 1 $prefix.novel.transcripts $prefix.novel.transcripts.raw
 python3 gtf_annotate.py $prefix.stringtie.filter.cds_plus.gtf $prefix.novel.transcripts.type $prefix.stringtie.annotated.gtf
 
 ###Epigenome annotation
-####SEI
-
-####Enformer
+python3 generate_sei_config.py
+python3 sei_slurm_submit_script.py
