@@ -1,8 +1,8 @@
 # 1KCP Analysis
 
-This repository contains the analysis scripts used for the **1000 Chinese Pangenome (1KCP) project**, which generated diploid genome assemblies for 1,116 Chinese individuals.
+This repository contains the analysis scripts used for the **1000 Chinese Pangenome (1KCP)** project, which generated diploid genome assemblies for 1,116 Chinese individuals.
 
-## Script Descriptions
+## Description
 
 The scripts are organized into the following directories:
 
