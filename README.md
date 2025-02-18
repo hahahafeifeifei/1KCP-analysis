@@ -44,5 +44,5 @@ The scripts are organized into the following directories:
 
 - `imputation.sh`: Performs leave-one-out imputation analysis.
 
-## Cite
+## Citation
 Wang, Y., et al. (2025). Diploid genome assemblies of 1,116 Chinese individuals empower medical and population genetics. Unpublished.
