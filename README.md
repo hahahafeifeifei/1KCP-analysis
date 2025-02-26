@@ -1,6 +1,6 @@
 # 1KCP Analysis
 
-This repository contains the analysis scripts used for the **1KCP** project.
+This repository contains the analysis scripts used for the 1KCP project.
 
 ## Description
 
