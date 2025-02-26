@@ -1,6 +1,6 @@
 # 1KCP Analysis
 
-This repository contains the analysis scripts used for the **1000 Chinese Pangenome (1KCP)** project, which generated diploid genome assemblies for 1,116 Chinese individuals.
+This repository contains the analysis scripts used for the **1KCP** project.
 
 ## Description
 
@@ -43,6 +43,3 @@ The scripts are organized into the following directories:
 ### 06_Imputation
 
 - `imputation.sh`: Performs leave-one-out imputation analysis.
-
-## Citation
-Wang, Y., et al. (2025). Diploid genome assemblies of 1,116 Chinese individuals empower medical and population genetics. Unpublished.
