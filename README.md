@@ -4,7 +4,7 @@ This repository contains the analysis scripts used for the 1KCP project.
 
 ## Description
 
-The analysis workflow are organized into the following directories:
+The analysis scripts are organized into the following directories:
 
 - [01_Assembly](01_Assembly/README.md): Perform diploid genome assembly, annotation, and quality assessment for each sample.
 
