@@ -18,7 +18,7 @@ Input files are specified in `config.yaml`.
 
 The pipeline produces the following output files:
 
-- `results/{sample}/{sample}.{chr}.impute.vcf.gz`: imputed genotypes for the left-out sample (per chromosome {chr})
+- `results/{sample}/{sample}.{chr}.impute.vcf.gz`: imputed genotypes for the left-out sample
 
 ## Run
 
