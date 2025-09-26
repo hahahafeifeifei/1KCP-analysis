@@ -1,0 +1,31 @@
+# Configuration for the Variant Detection
+
+# Path of reference genomes
+# Files could be download from https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GRCh38_major_release_seqs_for_alignment_pipelines/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.gz
+grch38: "/storage/reference/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna"
+
+# Path of subgraph list with GRCh38 paths
+id_list_file: "../02_Pangenome/results/gfa_grch38.list"
+
+# Path of subgraph
+gfa: "../02_Pangenome/results/subgraph/subgraph_{id}/minigraph_{id}.seqwish.smoothxg.gfaffix.clip.kmer.chop.ids.gfa"
+
+# Path of node annotation
+node_anno: "../02_Pangenome/results/merge.seqwish.smoothxg.gfaffix.clip.kmer.chop.ids.node.anno"
+
+# Path of sample list
+sample_list_file: "data/samples.txt"
+
+# Path of GRCh38 Flagger common unreliable regions
+unreliable_bed: "data/grch38.flagger.unreliable.bed"
+
+# Path of assemblies
+fa: "../01_Assembly/results/{sample}/{sample}.{haplotype}.fasta"
+
+# Path of TR loci reference
+tr_reference: "data/vamos.motif.hg38.v2.1.e0.1.nohomo.bed"
+
+# Path of HLA allele length list
+hla_len: "data/hla_gen.imgt3.54.len"
+# Path of HLA allele position list
+hla_pos: "data/hla_gene.pos"

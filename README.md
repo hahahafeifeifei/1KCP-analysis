@@ -1,17 +1,31 @@
+# 1KCP Analysis
 
+This repository contains the analysis scripts used for the 1KCP project.
 
-1KCP analysis pipeline
-The document record the pipeline of 1KCP analysis
-This repository contains all scripts used for the analysis for single-cell eQTL analyses in the brain. The scripts are organized in the following folders:
+## Description
 
-Description
-1_process_expression contains scripts to pseudobulk the single-cell data and generate the input expression matrices for eqtl discovery.
-2_process_genotype contains scripts to process the combined vcf genotype data into a readable format.
-3_eQTL_discovery contains scripts to perform the eQTL analysis.
-4_interaction_modelling contains scripts to perform re-analysis of eQTL results using LME models (and interaction terms).
-5_colocalisation contains scripts used for the colocalisation of eQTL discovery outputs and example GWAS.
-6_MendelianRandomisation contains scripts for mendelian randomisation following eQTL / GWAS colocalisation
-7_pQTL_analysis contains scripts to perform the post-hoc pQTL analysis with UKB-PPP and Robins et al.,(2021) data.
+The scripts are organized into the following directories:
 
+### 01_Assembly
 
-Cite 1KCP
+Perform diploid genome assembly, annotation, and quality assessment for each sample.
+
+### 02_Pangenome
+
+Construct, filter, and annotate a pangenome graph.
+
+### 03_Variant
+
+Build an extensive variant catalog from an assembly panel.
+
+### 04_Medical Relevance
+
+Perform medically relevant genomic analyses.
+
+### 05_eQTL
+
+Perform pan-variant eQTL analysis.
+
+### 06_Imputation
+
+Perform genotype imputation based on a reference panel.

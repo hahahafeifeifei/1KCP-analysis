@@ -1,0 +1,17 @@
+# Configuration for the imputation
+
+# Path of sample list
+sample_list_file: "data/samples.txt"
+
+# Path of variant files
+small: "../03_Variant/results/merge.ref.small.allele.reliable.vcf.gz"
+sv: "../03_Variant/results/merge.ref.sv.allele.reliable.vcf.gz"
+nest: "../03_Variant/results/merge.nest.allele.reliable.vcf.gz"
+tr: "../03_Variant/results/merge.tr.site.reliable.vcf"
+hla: "../03_Variant/results/merge.hla.reliable.vcf"
+
+# Path of vamos unit representation for GRCh38
+reference_tr: "data/GRCh38.vamos.tr.info"
+
+# Path of Omni 2.5M array sites
+omni: "data/omni.site"

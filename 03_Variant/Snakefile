@@ -1,0 +1,29 @@
+configfile: 'config.yaml'
+
+# Load the list of samples from the sample list file
+with open(config['sample_list_file']) as f:
+    samples_list = [line.strip().split()[0] for line in f if line.strip()]
+
+with open(config['id_list_file']) as f:
+    id_list = [line.strip() for line in f if line.strip()]
+
+include: 'rules/graph_variant_detection.smk'
+include: 'rules/tr_detection.smk'
+include: 'rules/hla_detection.smk'
+
+wildcard_constraints:
+    sample='|'.join(samples_list),
+    haplotype='hap1|hap2',
+    id='|'.join(id_list)
+
+rule all:
+    input:
+        small_vcf="results/merge.ref.small.allele.reliable.vcf.gz",
+        sv_vcf="results/merge.ref.sv.allele.reliable.vcf.gz",
+        nest_vcf="results/merge.nest.allele.reliable.vcf.gz",
+        tr_filter_vcf="results/merge.tr.site.reliable.vcf",
+        tr_length_vcf="results/merge.tr.length.reliable.vcf",
+        tr_motif_vcf="results/merge.tr.motif.reliable.vcf",
+        hla_vcf="results/merge.hla.reliable.vcf",
+        sv_repeat_anno="results/merge.ref.sv.repeat.anno",
+        nest_flanking_anno="results/merge.ref.nest.flanking.anno"

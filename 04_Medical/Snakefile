@@ -1,0 +1,15 @@
+configfile: 'config.yaml'
+
+# Load the list of samples from the sample list file
+with open(config['sample_list_file']) as f:
+    samples_list = [line.strip() for line in f if line.strip()]
+
+include: 'rules/pangene.smk'
+
+wildcard_constraints:
+    sample='|'.join(samples_list),
+    haplotype='hap1|hap2'
+
+rule all:
+    input:
+        pangene_gfa="results/merge.pangene.gfa"
