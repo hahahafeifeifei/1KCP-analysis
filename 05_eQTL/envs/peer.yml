@@ -1,0 +1,8 @@
+ichannels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - bioconductor-edger
+  - r-peer
+  - bioconductor-impute
+  - r-fastdummies
